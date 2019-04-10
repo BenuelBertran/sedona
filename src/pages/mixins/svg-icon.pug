@@ -1,0 +1,4 @@
+mixin svg(name)
+  - let svgName = name
+  svg.icon(class!=attributes.class style!=attributes.style)
+      use(xlink:href= svgName)

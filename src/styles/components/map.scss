@@ -1,0 +1,56 @@
+.map {
+  position: relative;
+  margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+
+    background-color: $primary;
+
+    @media (min-width: $mobile) {
+      top: 160px;
+      left: 146px;
+    }
+
+    @media (min-width: $tablet) {
+      top: 164px;
+      left: 370px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 162px;
+      left: 586px;
+    }
+  }
+
+   &::after {
+    position: absolute;
+    content: "";
+
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+
+    background-color: $secondary;
+
+    @media (min-width: $mobile) {
+      top: 165px;
+      left: 151px;
+    }
+
+    @media (min-width: $tablet) {
+      top: 169px;
+      left: 375px;
+    }
+
+     @media (min-width: $desktop) {
+      top: 167px;
+      left: 591px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+fieldset(class="impression form__group")
+  legend(class="title impression__title") Ваше общее впечатление:
+  ul(class="impression__list")
+    li(class="impression__item")
+      = '\n'
+      input(class="impression__field screen-readers-only" type="radio" name="impression" value="Скорее положительное" id="positive-field" checked)
+      = '\n'
+      label(class="impression__label" for="positive-field") Скорее положительное
+    li(class="impression__item form__item")
+      = '\n'
+      input(class="impression__field screen-readers-only" type="radio" name="impression" value="Скорее отрицательное" id="negative-field")
+      = '\n'
+      label(class="impression__label" for="negative-field") Скорее отрицательное
+    li(class="impression__item form__item")
+      = '\n'
+      input(class="impression__field screen-readers-only" type="radio" name="impression" value="Затрудняюсь ответить" id="neutral-field")
+      = '\n'
+      label(class="impression__label" for="neutral-field") Затрудняюсь ответить

@@ -1,0 +1,193 @@
+.header {
+  &__nav {
+    position: relative;
+  }
+  
+  &__logo {
+    position: absolute;
+    content: "";
+    left: 110px;
+
+    width: 101px;
+    height: 84px;
+
+    background-image: url(../img/sprite.styles.svg#logo-mobile);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    @media (min-width: $tablet) {
+      top: 0;
+      left: 333px;
+
+      background-image: url(../img/sprite.styles.svg#logo-tablet);
+    }
+
+    @media (min-width: $desktop) {
+      left: 506px;
+
+      width: 186px;
+      height: 96px;
+
+      background-image: url(../img/sprite.styles.svg#logo-desktop);
+    }
+  }
+
+  &__toggle {
+    position: relative;
+    
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-top: 16px;
+    margin-bottom: 17px;
+    margin-left: auto;
+    margin-right: 20px;
+    border: none;
+
+    background-color: $secondary;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 4.4px;
+      left: 0;
+      
+      width: 22px;
+      height: 4.4px;
+      
+      background-color: white;
+    }
+    
+    &::after {
+      top: 13.2px;
+    }
+    
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    width: 320px;
+    height: 158px;
+    
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 52px;
+      left: 45px;
+
+      width: 230px;
+      height: 389px;
+
+      background-image: url(../img/header-bg.svg);
+      background-repeat: no-repeat;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+
+      width: 320px;
+      height: 26px;
+
+      background-image: url(../img/sprite.styles.svg#angles-mobile);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    
+    @media (min-width: $tablet) {
+      width: 768px;
+      height: 290px;
+      
+      &::before {
+        top: 94px;
+        left: 155px;
+
+        width: 460px;  
+      }
+      &::after {
+        width: 768px;
+        height: 57px;
+
+        background-image: url(../img/sprite.styles.svg#angles-tablet);
+      }
+    }
+    @media (min-width: $desktop) {
+      width: 1200px;
+      height: 300px;
+      
+      &::before {
+        top: 102px;
+        left: 370px;  
+      }
+      &::after {
+        width: 1200px;
+
+        background-image: url(../img/sprite.styles.svg#angles-desktop); 
+      }
+    }
+
+    &--resize {
+      height: 389px;
+
+      &::before {
+        top: 91px;
+        left: 20px;
+
+        width: 280px;
+
+        background-image: url(../img/header-bg-indexPage.svg);
+      }
+      
+      @media (min-width: $tablet) {
+        height: 518px;
+        
+        &::before {
+          top: 77px;
+          left: 154px;
+
+          width: 460px;  
+        }
+      }
+      @media (min-width: $desktop) {
+        &::before {
+          top: 78px;
+          left: 370px;  
+        }
+      }
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    top: -230px;
+    left: -224px;
+    z-index: -1;
+    
+    width: 768px;
+    height: 390px;
+
+    @media (min-width: $tablet) {
+      left: 0;
+    }
+    @media (min-width: $desktop) {
+      top: -220px;
+
+      width: 1200px;
+    }
+
+    &--resize {
+      top: 0;
+    }
+  }
+}

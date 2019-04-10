@@ -1,0 +1,21 @@
+.feedback {
+  padding: 39px 20px 0;
+  
+  @media (min-width: $tablet) {
+    padding: 75px 60px 0;
+  }
+  @media (min-width: $desktop) {
+    padding: 111px 120px 0;
+  }
+  
+  &__section {
+    margin-bottom: 74px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 97px;
+    }
+    @media (min-width: $desktop) {
+      margin-bottom: 102px;
+    }
+  }
+}

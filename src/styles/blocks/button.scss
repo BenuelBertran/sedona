@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  border: none;
+  padding: 17px 20px 15px;
+
+  font-size: $bigger-size;
+  line-height: $big-height;
+  font-weight: $bold-weight;
+  color: $primary;
+  text-transform: uppercase;
+  text-align: center;
+  word-break: break-word;
+
+  background-color: $secondary;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-hover;
+  }
+
+  &:active {
+    color: fade($primary, 30%);
+    background-color: $secondary-active;
+  }
+
+  &:disabled {
+    background-color: $primary-darker10;
+  }
+}

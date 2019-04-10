@@ -1,0 +1,40 @@
+.hotel {
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 155px;
+  }
+
+  &__title {
+    padding: 30px 0;
+
+    font-size: $bigger-size;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 30px;
+
+      font-size: $biggest-size;
+    }
+  }
+
+  &__description {
+    padding-bottom: 34px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 41px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 46px;
+    }
+  }
+
+  &__btn {
+    width: 280px;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet) {
+      width: 458px;
+    }
+  }
+}

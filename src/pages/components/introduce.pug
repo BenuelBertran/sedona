@@ -1,0 +1,22 @@
+fieldset(class="introduce form__group")
+  legend(class="title introduce__title") Представьтесь:
+  ul(class="introduce__list")
+    li(class="introduce__item")
+      = '\n'
+      label(class="introduce__label" for="first-name-field") Имя
+        sup(class="introduce__required")
+          | *:
+      = '\n'
+      input(class="introduce__field" type="text" name="first-name" placeholder="Пётр" id="first-name-field" required)
+    li(class="introduce__item")
+      = '\n'
+      label(class="introduce__label" for="second-name-field") Фамилия
+        sup(class="introduce__required")
+          | *:
+      = '\n'
+      input(class="introduce__field" type="text" name="second-name" placeholder="Иванов" id="second-name-field" required)
+    li(class="introduce__item")
+      = '\n'
+      label(class="introduce__label" for="third-name-field") Отчество:
+      = '\n'
+      input(class="introduce__field" type="text" name="third-name" placeholder="Александрович" id="third-name-field")

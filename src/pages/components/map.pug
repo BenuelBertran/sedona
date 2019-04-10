@@ -1,0 +1,10 @@
+section(class="map index__section")
+  h2(class="title map__title screen-readers-only") Sedona на карте
+  picture(class="map__picture")
+    source(type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop@1x.webp, img/map-desktop@2x.webp 2x")
+    source(media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x")
+    source(type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp, img/map-tablet@2x.webp 2x")
+    source(media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x")
+    source(type="image/webp" srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp 2x")
+    = '\n'
+    img(class="map__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Город Седона на карте")

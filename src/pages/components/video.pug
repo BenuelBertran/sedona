@@ -1,0 +1,25 @@
+section(class="video media__section")
+  h2(class="title video__title") Все еще сомневаетесь?
+  p(class="video__subtitle")
+    | Смотрите видеопрезентацию и&nbsp;
+    br(class="break break--mobile")
+    | скорее за билетами, пока&nbsp;
+    br(class="break break--tablet break--desktop")
+    | они не подорожали в очередной раз!
+  div(class="player video__player")
+    picture
+      source(type="image/webp" media="(min-width: 1200px)" srcset="img/cars-desktop@1x.webp, img/cars-desktop@2x.webp 2x")
+      source(media="(min-width: 1200px)" srcset="img/cars-desktop@1x.jpg, img/cars-desktop@2x.jpg 2x")
+      source(type="image/webp" media="(min-width: 768px)" srcset="img/cars-tablet@1x.webp, img/cars-tablet@2x.webp 2x")
+      source(media="(min-width: 768px)" srcset="img/cars-mobile@1x.jpg, img/cars-mobile@2x.jpg 2x")
+      source(type="image/webp" srcset="img/cars-mobile@1x.webp, img/cars-mobile@2x.webp 2x")
+      = '\n'
+      img(class="player__screen" src="img/cars-mobile@1x.jpg" srcset="img/cars-mobile@2x.jpg 2x" alt="Ряд машин на загородной трассе")
+    div(class="controls player__controls")
+      div(class="controls__playback")
+      = '\n'
+      button(class="controls__btn controls__btn--replay" type="button" aria-label="replay")
+      = '\n'
+      button(class="controls__btn controls__btn--subtitles" type="button" aria-label="subtitles")
+      = '\n'
+      button(class="controls__btn controls__btn--fulscreen" type="button" aria-label="fulscreen")

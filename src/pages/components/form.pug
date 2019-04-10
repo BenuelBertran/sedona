@@ -1,0 +1,12 @@
+form(class="form response__form" action="#" method="post")
+  include introduce
+  include contacts
+  include impression
+  include sights
+  include emotions
+  = '\n'
+  button(class="btn form__btn" type="submit") Отправить отзыв
+  p(class="form__footnote")
+    sup(class="form__required form__required--space")
+      | *
+    | &ndash; обязательные поля

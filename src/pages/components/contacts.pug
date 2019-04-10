@@ -1,0 +1,21 @@
+fieldset(class="contacts form__group")
+  legend(class="title contacts__title") Контактная информация:
+  ul(class="contacts__list")
+    li(class="contacts__item")
+      = '\n'
+      label(class="contacts__label contacts__label--phone" for="phone-field")
+        span(class="contacts__span")
+          | Контактный&nbsp;
+        | телефон
+        sup(class="contacts__required")
+          | *:
+      = '\n'
+      input(class="contacts__field" type="tel" name="phone" placeholder="Введите телефон" id="phone-field" required)
+    li(class="contacts__item")
+      = '\n'
+      label(class="contacts__label contacts__label--email" for="email-field")
+        | Электронная почта
+        sup(class="contacts__required")
+          | *:
+      = '\n'
+      input(class="contacts__field" type="email" name="email" placeholder="Введите e-mail" id="email-field" required)

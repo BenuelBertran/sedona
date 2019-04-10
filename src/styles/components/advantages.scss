@@ -1,0 +1,30 @@
+.advantages {
+  line-height: $low-height;
+
+  &__wrapper {
+    margin-bottom: 27px;
+    padding: 0 20px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 50px;
+      padding: 0 100px;
+    }
+  }
+
+  &__title {
+    padding-top: 40px;
+    padding-bottom: 28px;
+
+    @media (min-width: $tablet) {
+      padding-top: 50px;
+    }
+  }
+
+  &__subtitle {
+    line-height: $big-height;
+  }
+  
+  &__list {
+    
+  }
+}

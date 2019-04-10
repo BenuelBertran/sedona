@@ -1,0 +1,76 @@
+section(class="gallery media__section")
+  h2(class="title gallery__title") Фотогалерея
+  p(class="gallery__subtitle")
+    | Не можете решиться на путешествие из за курса?&nbsp;
+    br(class="break break--tablet break--desktop")
+    | Фотографии помогут&nbsp;
+    br(class="break break--mobile")
+    | вам забыть о политике и экономике.
+  ul(class="photos gallery__list")
+    li(class="photos__item")
+      figure(class="photos__card")
+        = '\n'
+        a(class="photos__link" href="#")
+          picture(class="photos__picture")
+            source(type="image/webp" media="(min-width: 1200px)" srcset="img/sunset-desktop@1x.webp, img/sunset-desktop@2x.webp 2x")
+            source(media="(min-width: 1200px)" srcset="img/sunset-desktop@1x.jpg, img/sunset-desktop@2x.jpg 2x")
+            source(type="image/webp" media="(min-width: 768px)" srcset="img/sunset-tablet@1x.webp, img/sunset-tablet@2x.webp 2x")
+            source(media="(min-width: 768px)" srcset="img/sunset-tablet@1x.jpg, img/sunset-tablet@1x.jpg 2x")
+            source(type="image/webp" srcset="img/sunset-mobile@1x.webp, img/sunset-mobile@2x.webp 2x")
+            = '\n'
+            img(class="photos__image" src="img/sunset-mobile@1x.jpg" srcset="img/sunset-mobile@2x.jpg 2x" alt="Дорога, уходящая в закат")
+        figcaption(class="photos__caption photos__caption--big")
+          div(class="photos__wrapper")
+            h3(class="title photos__title") Неродные просторы
+            p(class="photos__author") Автор фото: Борис
+          p(class="photos__likes") 1350
+    li(class="photos__item")
+      figure(class="photos__card")
+        = '\n'
+        a(class="photos__link" href="#")
+          picture(class="photos__picture")
+            source(type="image/webp" media="(min-width: 1200px)" srcset="img/cactus-desktop@1x.webp, img/cactus-desktop@2x.webp 2x")
+            source(media="(min-width: 1200px)" srcset="img/cactus-desktop@1x.jpg, img/cactus-desktop@2x.jpg 2x")
+            source(type="image/webp" media="(min-width: 768px)" srcset="img/cactus-tablet@1x.webp, img/cactus-tablet@2x.webp 2x")
+            source(media="(min-width: 768px)" srcset="img/cactus-tablet@1x.jpg, img/cactus-tablet@2x.jpg 2x")
+            source(type="image/webp" srcset="img/cactus-mobile@1x.webp, img/cactus-mobile@2x.webp 2x")
+            = '\n'
+            img(class="photos__image" src="img/cactus-mobile@1x.jpg" srcset="img/cactus-mobile@2x.jpg 2x" alt="Экзотический кактус на фоне гор")
+        figcaption(class="photos__caption")
+          div(class="photos__wrapper")
+            h3(class="title photos__title") Местная растительность
+            p(class="photos__author") Автор фото: Сергей
+          p(class="photos__likes") 143
+    li(class="photos__item")
+      figure(class="photos__card")
+        = '\n'
+        a(class="photos__link" href="#")
+          picture(class="photos__picture")
+            source(type="image/webp" media="(min-width: 1200px)" srcset="img/serpentine-desktop@1x.webp, img/serpentine-desktop@2x.webp 2x")
+            source(media="(min-width: 1200px)" srcset="img/serpentine-desktop@1x.jpg, img/serpentine-desktop@2x.jpg 2x")
+            source(type="image/webp" media="(min-width: 768px)" srcset="img/serpentine-tablet@1x.webp, img/serpentine-tablet@2x.webp 2x")
+            source(media="(min-width: 768px)" srcset="img/serpentine-tablet@1x.jpg, img/serpentine-tablet@2x.jpg 2x")
+            source(type="image/webp" srcset="img/serpentine-mobile@1x.webp, img/serpentine-mobile@2x.webp 2x")
+            = '\n'
+            img(class="photos__image" src="img/serpentine-mobile@1x.jpg" srcset="img/serpentine-mobile@2x.jpg 2x" alt="Дорожный серпантин в густом лесу")
+        figcaption(class="photos__caption")
+          div(class="photos__wrapper")
+            h3(class="title photos__title") Дорога на Север
+            p(class="photos__author") Автор фото: Пётр
+          p(class="photos__likes") 96
+    li(class="photos__item")
+      figure(class="photos__card")
+        = '\n'
+        a(class="photos__link" href="#")
+          picture(class="photos__picture")
+            source(type="image/webp" media="(min-width: 1200px)" srcset="img/bridge-gallery-desktop@1x.webp, img/bridge-gallery-desktop@2x.webp 2x")
+            source(media="(min-width: 1200px)" srcset="img/bridge-gallery-desktop@1x.jpg, img/bridge-gallery-desktop@2x.jpg 2x")
+            source(type="image/webp" media="(min-width: 768px)" srcset="img/bridge-gallery-tablet@1x.webp, img/bridge-gallery-tablet@2x.webp 2x")
+            source(media="(min-width: 768px)" srcset="img/bridge-gallery-tablet@1x.jpg, img/bridge-gallery-tablet@2x.jpg 2x")
+            source(type="image/webp" srcset="img/bridge-gallery-mobile@1x.webp, img/bridge-gallery-mobile@2x.webp 2x")
+            img(class="photos__image" src="img/bridge-gallery-mobile@1x.jpg" srcset="img/bridge-gallery-mobile@2x.jpg 2x" alt="Каменный мост над пропастью")
+        figcaption(class="photos__caption")
+          div(class="photos__wrapper")
+            h3(class="title photos__title") Мост Дьявола
+            p(class="photos__author") Автор фото: Антон
+          p(class="photos__likes") 254

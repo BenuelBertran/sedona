@@ -1,0 +1,187 @@
+.reasons {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+  &__item {
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__wrapper {
+    @media (min-width: $tablet) {
+      width: 256px;
+      height: 256px;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop) {
+      width: 400px;
+      padding: 45px 55px;
+    }
+
+    &--one {
+      position: relative;
+
+      padding: 55px 20px 40px;
+
+      color: $primary;
+
+      background: $secondary;
+
+      @media (min-width: $tablet) {
+        padding: 45px;
+      }
+
+      @media (min-width: $desktop) {
+        padding-top: 52px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: -22px;
+        left: 0;
+
+        width: 320px;
+        height: 37px;
+
+        background-image: url(../img/sprite.styles.svg#angle-mobile);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        @media (min-width: $tablet) {
+          display: none;
+        }
+      }
+    }
+
+    &--two {
+      padding: 40px 20px;
+
+      color: $primary;
+
+      background: $secondary;
+
+      @media (min-width: $tablet) {
+        order: 1;
+        padding: 45px;
+      }
+
+      @media (min-width: $desktop) {
+        padding-top: 53px;
+      }
+    }
+
+    &--three {
+      padding: 27px 20px 28px;
+
+      background: $primary-darker7;
+
+      @media (min-width: $tablet) {
+        padding: 45px;
+      }
+    }
+
+    &--four {
+      position: relative;
+
+      padding: 27px 20px 30px;
+
+      background: $primary-darker7;
+
+      @media (min-width: $tablet) {
+        padding: 45px;
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+
+        width: 280px;
+        height: 1px;
+        margin: 0 20px;
+
+        background-color: $primary-darker16;
+      }
+
+      &::before {
+      top: -1px;
+      }
+
+      &::after {
+      bottom: 2px;
+      }
+
+      @media (min-width: $tablet) {
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    &--five {
+      padding: 25px 20px 27px;
+
+      background: $primary-darker7;
+
+      @media (min-width: $tablet) {
+        padding: 45px;
+      }
+    }
+  }
+
+  &__title {
+    color: $primary;
+  }
+
+  &__number {
+    padding-top: 8px;
+    padding-bottom: 16px;
+
+    @media (min-width: $tablet) {
+      padding-top: 10px;
+      padding-bottom: 21px;
+    }
+  }
+  
+  &__picture {
+    @media (min-width: $desktop) {
+      width: 800px;
+      height: 256px;
+      
+      overflow: hidden;
+    }
+  }
+
+  &__image {
+    @media (min-width: $desktop) {
+      position: relative;
+
+      &--city {
+        top: -71px;
+      }
+
+      &--bridge {
+        top: -76px;
+      }
+    }
+  }
+
+  &__list {
+    padding-top: 7px;
+    padding-right: 20px;
+    padding-bottom: 37px;
+    padding-left: 70px;
+
+    @media (min-width: $tablet) {
+      padding: 0;
+    }
+  }
+}

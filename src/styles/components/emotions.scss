@@ -1,0 +1,98 @@
+.emotions {
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet) {
+    order: 1;
+    padding-bottom: 58px;
+    width: 648px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 960px;
+  }
+
+  &__title {
+    padding-bottom: 17px;
+
+    @media (min-width: $tablet) {
+      position: relative;
+
+      padding-bottom: 57px;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        top: 12px;
+        left: -196px;
+
+        width: 125px;
+        height: 1px;
+
+        background-color: $primary-darker14;
+      }
+
+      &::after {
+        left: 328px;
+      }
+    }
+
+    @media (min-width: $desktop) {
+
+      &::before,
+      &::after {
+        left: -355px;
+
+        width: 280px;
+      }
+
+      &::after {
+        left: 326px;
+      }
+    }
+  }
+  
+  &__list {
+    font-size: $big-size;
+    font-weight: $bold-weight;
+    line-height: $big-height;
+    color: $primary-darker100;
+    text-align: left;  
+    text-transform: none;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__field {
+    flex-grow: 1;
+    width: 100%;
+    padding: 12px 17px 88px;
+    border: 4px solid $primary-darker5;
+
+    font-size: $big-size;
+    font-weight: $bold-weight;
+    line-height: $big-height;
+    color: $primary-darker100;
+
+    background-color: $primary-darker5;
+    resize: none;
+
+    &::placeholder {
+      font: inherit;
+      opacity: 0.5;
+    }
+
+    &:hover{
+      border: 4px solid $primary-darker10;
+
+      background-color: $primary-darker10;
+    }
+
+    &:focus {
+      background-color: $primary;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+fieldset(class="sights form__group")
+  legend(class="title sights__title")
+    | Посещенные&nbsp;
+    br(class="break break--mobile break--tablet break--desktop")
+    | достопримечательности:
+  ul(class="sights__list")
+    li(class="sights__item")
+      = '\n'
+      input(class="sights__field screen-readers-only" type="checkbox" name="devil-bridge" value="Мост Дьявола" id="devil-bridge-field" checked)
+      = '\n'
+      label(class="sights__label" for="devil-bridge-field") Мост Дьявола
+    li(class="sights__item sights__item--bell")
+      = '\n'
+      input(class="sights__field screen-readers-only" type="checkbox" name="bell-mountain" value="Гора-Колокол" id="bell-mountain-field" checked)
+      = '\n'
+      label(class="sights__label" for="bell-mountain-field") Гора-Колокол
+    li(class="sights__item sights__item--park")
+      = '\n'
+      input(class="sights__field screen-readers-only" type="checkbox" name="slide-park" value="Слайд-парк" id="slide-park-field" checked)
+      = '\n'
+      label(class="sights__label" for="slide-park-field") Слайд-парк
+    li(class="sights__item")
+      = '\n'
+      input(class="sights__field screen-readers-only" type="checkbox" name="red-rocks" value="Красные скалы" id="red-rocks-field")
+      = '\n'
+      label(class="sights__label" for="red-rocks-field") Красные скалы

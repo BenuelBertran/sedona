@@ -1,0 +1,56 @@
+////////// - Colors - //////////
+
+$primary: hsl(0, 0%, 100%);            //#ffffff
+$primary-darker5: hsl(0, 0%, 95%);     //#f2f2f2
+$primary-darker7: hsl(0, 0%, 93%);     //#eeeeee
+$primary-darker10: hsl(0, 0%, 90%);    //#e5e5e5
+$primary-darker14: hsl(0, 0%, 86%);    //#dbdbdb
+$primary-darker16: hsl(0, 0%, 84%);    //#d5d5d5
+$primary-darker80: hsl(0, 0%, 20%);    //#333333
+$primary-darker100: hsl(0, 0%, 0%);    //#000000
+
+$secondary: hsl(203, 47%, 66%);        //#81b3d2
+$secondary-hover: hsl(203, 42%, 58%);  //#669ec0
+$secondary-active: hsl(202, 44%, 54%); //#5496BD
+
+$tertiary: hsl(23, 15%, 40%);          //#766357
+$tertiary-hover: hsl(23, 18%, 32%);    //#604e43
+
+$chrome-outline: hsl(217, 99%, 65%);   //#4D90FE
+
+////////// - Fonts - //////////
+
+//$lowest-height: 16px;
+
+//$lower-height: 19px;
+
+//$low-size: 14px;
+$low-height: 21px;
+//$low-weight: 300;
+
+$normal-size: 14px;
+$normal-height: 24px;
+$regular-weight: 400;
+
+$big-size: 18px;
+$big-height: 26px;
+$bold-weight: 700;
+
+$bigger-size: 21px;
+$bigger-height: 40px;
+//$bigger-weight: 700;
+
+$biggest-size: 30px;
+
+////////// - Screen - //////////
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1200px;
+//$notebook: 1160px;
+//$tv: 1920px;
+
+////////// - Resolution - //////////
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

@@ -1,0 +1,224 @@
+.controls {
+  width: 280px;
+  height: 66px;
+
+  background-color: $primary-darker5;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    top: -93px;
+
+    width: 648px;
+    height: 93px;
+
+    background-color: fade-out($primary-darker100, 0.4);
+  }
+
+  @media (min-width: $desktop) {
+    width: 800px;
+  }
+
+  &__playback {
+    position: relative;
+    top: -45px;
+    left: 0;
+
+    width: 280px;
+    height: 45px;
+
+    background-color: fade-out($primary-darker100, 0.4);
+
+    @media (min-width: $tablet) {
+      top: 24px;
+      left: 93px;
+
+      width: 389px;
+
+      background-color: transparent;
+    }
+
+    @media (min-width: $desktop) {
+      width: 540px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 22px;
+      left: 22px;
+
+      width: 235px;
+      height: 3px;
+
+      background-color: $primary;
+
+      opacity: 0.2;
+      cursor: pointer;
+
+      @media (min-width: $tablet) {
+        left: 0;
+
+        width: 389px;
+      }
+
+      @media (min-width: $desktop) {
+        width: 540px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 19px;
+      left: 58px;
+
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+
+      background-color: $primary;
+
+      cursor: pointer;
+
+      @media (min-width: $tablet) {
+        left: 113px;
+      }
+
+      @media (min-width: $desktop) {
+        top: 18px;
+        left: 112px;
+      }
+    }
+  }
+
+  &__btn {
+    border: none;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    cursor: pointer;
+
+    &--replay {
+      position: relative;
+      top: -23px;
+      left: -77px;
+
+      width: 16px;
+      height: 20px;
+
+      background-image: url(../img/sprite.styles.svg#replay-mobile);
+      
+
+      &:hover {
+        background-image: url(../img/sprite.styles.svg#replay-mobile-hover);
+
+        &:active {
+          opacity: 0.3;
+        }
+      }
+
+      @media (min-width: $tablet) {
+        top: -9px;
+        left: -251px;
+
+        background-image: url(../img/sprite.styles.svg#replay);
+
+        &:hover,
+        &:focus {
+          opacity: 0.6;
+        }
+        
+        &:active {
+          opacity: 0.3;
+        }
+      }
+
+      @media (min-width: $desktop) {
+        top: -10px;
+        left: -328px;
+      }
+    }
+
+    &--subtitles {
+      position: relative;
+      top: -22px;
+      left: 52px;
+
+      width: 32px;
+      height: 20px;
+
+      background-image: url(../img/sprite.styles.svg#subtitles-mobile);
+
+      &:hover {
+        background-image: url(../img/sprite.styles.svg#subtitles-mobile-hover);
+
+        &:active {
+          opacity: 0.3;
+        }
+      }
+
+      @media (min-width: $tablet) {
+        top: -8px;
+        left: 218px;
+
+        background-image: url(../img/sprite.styles.svg#subtitles);
+
+        &:hover,
+        &:focus {
+          opacity: 0.6;
+        }
+        
+        &:active {
+          opacity: 0.3;
+        }
+      }
+
+      @media (min-width: $desktop) {
+        top: -9px;
+        left: 292px;
+      }
+    }
+
+    &--fulscreen {
+      position: relative;
+      top: -22px;
+      left: 80px;
+
+      width: 20px;
+      height: 20px;
+
+      background-image: url(../img/sprite.styles.svg#fullscreen-mobile);
+
+      &:hover {
+        background-image: url(../img/sprite.styles.svg#fullscreen-mobile-hover);
+
+        &:active {
+          opacity: 0.3;
+        }
+      }
+
+      @media (min-width: $tablet) {
+        top: -8px;
+        left: 246px;
+
+        background-image: url(../img/sprite.styles.svg#fullscreen);
+
+        &:hover,
+        &:focus {
+          opacity: 0.6;
+        }
+        
+        &:active {
+          opacity: 0.3;
+        }
+      }
+
+      @media (min-width: $desktop) {
+        top: -9px;
+        left: 319px;
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.menu {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    display: block;
+    padding: 8px 20px;
+
+    font-size: $big-size;
+    line-height: $bigger-height;
+
+    @media (min-width: $tablet) {
+      position: relative;
+
+      width: 110px;
+      padding: 15px 20px;
+
+      font-size: $normal-size;
+      line-height: $big-height;
+      color: $primary-darker100;
+
+      background-color: $primary;
+      box-shadow: none;
+
+      &--current {
+        color: $tertiary;
+
+        &:hover,
+        &:focus {
+          color: $tertiary-hover;
+        }
+
+        &:active {
+          color: fade($tertiary, 30%);
+        }
+      }
+
+      &:hover,
+      &:focus {
+        color: $secondary;
+        background-color: $primary;
+      }
+
+      &:active {
+        color: fade($primary-darker100, 30%);
+      }
+    }
+
+    &--index {
+      box-shadow: inset 0 -1px rgba(1, 1, 1, 0.2);
+
+      @media (min-width: $tablet) {
+        left: 3px;
+
+        box-shadow: none;
+      }
+
+      @media (min-width: $desktop) {
+        left: 44px;
+      }
+    }
+
+    &--media {
+      box-shadow:
+        inset 0 1px rgba(255, 255, 255, 0.2),
+        inset 0 -1px rgba(1, 1, 1, 0.2);
+
+      @media (min-width: $tablet) {
+        left: -49px;
+
+        box-shadow: none;
+      }
+
+      @media (min-width: $desktop) {
+        left: -67px;
+      }
+    }
+
+    &--form {
+      box-shadow:
+        inset 0 1px rgba(255, 255, 255, 0.2),
+        inset 0 -1px rgba(1, 1, 1, 0.2);
+
+      @media (min-width: $tablet) {
+        left: 54px;
+
+        box-shadow: none;
+      }
+
+      @media (min-width: $desktop) {
+        left: 66px;
+      }
+    }
+
+    &--contacts {
+      box-shadow:
+        inset 0 1px rgba(255, 255, 255, 0.2),
+        inset 0px -20px 10px -20px rgba(0, 0, 0, 0.2);
+
+      @media (min-width: $tablet) {
+        left: -1px;
+
+        box-shadow: none;
+      }
+
+      @media (min-width: $desktop) {
+        left: -45px;
+      }
+    }
+  }
+}

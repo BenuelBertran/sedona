@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
+
+    background: $secondary;
+
+    &:hover,
+    &:focus {
+      background-color: $secondary-hover;
+    }
+
+    &:active {
+      background-color: $secondary-active;
+    }
+  }
+
+  &__icon {
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

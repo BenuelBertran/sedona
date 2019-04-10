@@ -1,0 +1,10 @@
+.title {
+  font-size: $big-size;
+  line-height: $big-height;
+  font-weight: $bold-weight;
+  color: $primary-darker100;
+
+  @media (min-width: $tablet) {
+    font-size: $bigger-size;
+  }
+}

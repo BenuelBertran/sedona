@@ -1,0 +1,61 @@
+.gallery {
+  margin-bottom: 11px;
+  padding: 39px 20px 0;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 67px;
+    padding: 75px 60px 0;
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 70px;
+    padding: 111px 0 0;
+  }
+  
+  &__title {
+    padding-bottom: 26px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 30px;
+
+      font-size: $biggest-size;
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 31px;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+
+    padding-bottom: 50px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 69px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 71px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 22px;
+      left: -20px;
+
+      width: 320px;
+      height: 1px;
+
+      background-color: $primary-darker10;
+
+      @media (min-width: $tablet) {
+        display: none;
+      }
+    }
+  }
+  
+  &__list {
+    
+  }
+}

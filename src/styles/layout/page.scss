@@ -1,0 +1,37 @@
+.page {
+  width: 320px;
+  margin: 0 auto;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: $normal-size; //calc(10px + 1vmin);
+  line-height: $normal-height;
+  font-weight: $regular-weight;
+  color: $primary-darker80;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $primary;
+
+  @media (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1200px;
+    border-width: 0 40px 0 40px;
+    border-style: solid;
+    border-color: $primary-darker5;
+  }
+  
+  &__header {
+    
+  }
+  
+  &__main {
+    
+  }
+  
+  &__footer {
+    
+  }
+}

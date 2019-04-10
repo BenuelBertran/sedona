@@ -1,0 +1,160 @@
+.sights {
+  padding-bottom: 7px;
+
+  @media (min-width: $tablet) {
+    padding: 0 65px 22px;
+    order: 1;
+    width: 648px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 0 20px 0;
+
+    width: 960px;
+  }
+
+  &__title {
+    padding-bottom: 30px;
+
+    @media (min-width: $tablet) {
+      position: relative;
+
+      padding-bottom: 56px;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        top: 25px;
+        left: -186px;
+
+        width: 125px;
+        height: 1px;
+
+        background-color: $primary-darker14;
+      }
+
+      &::after {
+        left: 337px;
+      }
+    }
+
+    @media (min-width: $desktop) {
+
+      &::before,
+      &::after {
+        left: -342px;
+
+        width: 280px;
+      }
+
+      &::after {
+        left: 339px;
+      }
+    }
+  }
+
+  &__list {
+    font-size: $big-size;
+    font-weight: $bold-weight;
+    line-height: $big-height;
+    color: $primary-darker100;
+    text-align: left;
+    text-transform: none;
+    
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    padding-bottom: 54px;
+    padding-left: 79px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 62px;
+      padding-left: 110px;
+      width: 149px;
+    }
+
+    @media (min-width: $desktop) {
+      position: relative;
+
+      padding-left: 81px;
+      width: 125px;
+
+      &--bell {
+        left: 8px;
+      }
+
+      &--park {
+        left: 14px;
+      }
+    }
+  }
+
+  &__field + label {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -14px;
+      left: -78px;
+
+      width: 56px;
+      height: 56px;
+      border-radius: 20%;
+
+      background-color: $primary-darker5;
+    }
+  }
+
+  &__field:hover + label {
+    &::before {
+      background-color: $primary-darker10;
+    }
+  }
+
+  &__field:focus + label {
+    &::before {
+      box-shadow: 0 0 2px 1px $chrome-outline;
+    }
+  }
+
+  &__field:active + label {
+    &::before {
+      background-color: $primary-darker16;
+    }
+  }
+
+  &__field:active + label {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &__field:checked + label {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 6px;
+      left: -62px;
+
+      width: 24px;
+      height: 17px;
+      border-radius: 50%;
+
+      background-image: url(../img/sprite.styles.svg#tick);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet) {
+        top: 5px;
+        left: -63px;
+      }
+    }
+  }
+}

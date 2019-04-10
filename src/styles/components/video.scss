@@ -1,0 +1,39 @@
+.video {
+  margin-bottom: 75px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 44px;
+    padding: 0 200px;
+  }
+  
+  &__title {
+    padding-bottom: 26px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 30px;
+
+      font-size: $biggest-size;
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 31px;
+    }
+  }
+
+  &__subtitle {
+    padding: 0 20px 35px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 57px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 55px;
+    }
+  }
+}

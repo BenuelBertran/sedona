@@ -1,0 +1,24 @@
+.response {
+  &__title {
+    padding-bottom: 30px;
+
+    @media (min-width: $tablet) {
+      font-size: $biggest-size;
+    }
+  }
+
+  &__subtitle {
+    padding-bottom: 36px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 74px;
+    }
+    @media (min-width: $desktop) {
+      padding-bottom: 59px;
+    }
+  }
+  
+  &__modal {
+    margin-bottom: 47px;
+  }
+}

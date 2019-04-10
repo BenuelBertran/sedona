@@ -1,0 +1,180 @@
+.contacts {
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    order: 1;
+    margin-top: 15px;
+    padding-bottom: 30px;
+    width: 648px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 13px;
+    width: 960px;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+
+    @media (min-width: $tablet) {
+      position: relative;
+
+      padding-bottom: 24px;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        top: 12px;
+        left: -184px;
+
+        width: 125px;
+        height: 1px;
+
+        background-color: $primary-darker14;
+      }
+
+      &::after {
+        left: 339px;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 73px;
+
+      &::before,
+      &::after {
+        width: 280px;
+      }
+
+      &::before {
+        left: -342px;
+      }
+    }
+  }
+
+  &__list {
+    text-align: left;
+    
+    @media (min-width: $desktop) {
+      display: flex;
+    }
+  }
+  
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 23px;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+      width: 480px;
+    }
+  }
+
+  &__label {
+    position: relative;
+
+    padding-bottom: 6px;
+    padding-left: 22px;
+    
+    line-height: 26px;
+
+    @media (min-width: $desktop) {
+      padding: 0 13px 0 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 32px;
+      right: 0;
+
+      background-color: $primary-darker10;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+
+    &--phone {
+      &::after {
+        width: 18px;
+        height: 18px;
+        padding: 20px 20px;
+
+        background-image: url(../img/sprite.styles.svg#phone);
+        background-size: 18px 18px;
+
+        @media (min-width: $desktop) {
+          top: -21px;
+          left: 343px;
+        }
+      }
+    }
+
+    &--email {
+      &::after {
+        width: 16px;
+        height: 16px;
+        padding: 21px 21px;
+
+        background-image: url(../img/sprite.styles.svg#mail);
+        background-size: 16px 16px;
+
+        @media (min-width: $desktop) {
+          top: -21px;
+          left: 423px;
+        }
+      }
+    }
+  }
+
+  &__field {
+    width: 100%;
+    padding: 13px 70px 12px 18px;
+    border: 4px solid $primary-darker5;
+    box-sizing: border-box;
+
+    font-size: $big-size;
+    font-weight: $bold-weight;
+    line-height: $big-height;
+    color: $primary-darker100;
+
+    background-color: $primary-darker5;
+
+    &::placeholder {
+      font: inherit;
+      opacity: 0.5;
+    }
+
+    &:hover{
+      border: 4px solid $primary-darker10;
+
+      background-color: $primary-darker10;
+    }
+
+    &:focus {
+      background-color: $primary;
+      outline: none;
+    } 
+    
+    @media (min-width: $desktop) {
+      width: 315px;
+    }
+  }
+  
+    &__span {
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+  
+  &__required {
+    position: relative;
+    top: -2px;
+    left: 0;
+  }
+}

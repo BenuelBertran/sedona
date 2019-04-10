@@ -1,0 +1,25 @@
+.index {
+  &__advantages {
+    margin-bottom: 28px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__hotel {
+    margin-bottom: 50px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 59px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 67px;
+    }
+  }
+
+  &__map {
+    margin-bottom: 36px;
+  }
+}

@@ -1,0 +1,42 @@
+//Global settings
+@import "global/normalize";
+@import "global/mixins";
+@import "global/variables";
+@import "global/helpers";
+@import "global/fonts";
+
+//Building blocks
+@import "blocks/title";
+@import "blocks/button";
+
+//Site layout
+@import "layout/page";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+//Page components
+@import "components/advantages";
+@import "components/contacts";
+@import "components/controls";
+@import "components/emotions";
+@import "components/failure";
+@import "components/feedback";
+@import "components/form";
+@import "components/gallery";
+@import "components/media";
+@import "components/hotel";
+@import "components/impression";
+@import "components/index";
+@import "components/introduce";
+@import "components/map";
+@import "components/menu";
+@import "components/photos";
+@import "components/player";
+@import "components/real-city";
+@import "components/reasons";
+@import "components/response";
+@import "components/sights";
+@import "components/social";
+@import "components/success";
+@import "components/video";

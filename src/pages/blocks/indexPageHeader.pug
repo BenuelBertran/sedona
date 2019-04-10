@@ -1,0 +1,12 @@
+extends header
+
+block title
+  h1(class="title header__title header__title--resize")
+    picture(class="header__picture header__picture--resize")
+      source(type="image/webp" media="(min-width: 1200px)" srcset="img/header-bg-desktop@1x.webp, img/header-bg-desktop@2x.webp 2x")
+      source(media="(min-width: 1200px)" srcset="img/header-bg-desktop@1x.jpg, img/header-bg-desktop@2x.jpg 2x")
+      source(type="image/webp" media="(min-width: 768px)" srcset="img/header-bg-tablet@1x.webp, img/header-bg-tablet@2x.webp 2x")
+      source(media="(min-width: 768px)" srcset="img/header-bg-tablet@1x.jpg, img/header-bg-tablet@2x.jpg 2x")
+      source(type="image/webp" srcset="img/header-bg-mobile@1x.webp, img/header-bg-mobile@2x.webp 2x")
+      = '\n'
+      img(class="header__image" src="img/header-bg-mobile@1x.jpg" srcset="img/header-bg-mobile@2x.jpg 2x" alt="WELCOME to gorgeous SEDONA 'Because the Grand Canyon sucks!'")

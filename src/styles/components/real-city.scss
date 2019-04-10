@@ -1,0 +1,127 @@
+.real-city {
+  text-align: left;
+
+  @media (min-width: $tablet) {
+    display: flex;
+
+    text-align: center;
+  }
+
+  &__item {
+    padding-top: 28px;
+
+    @media (min-width: $tablet) {
+      padding: 159px 45px 45px;
+      box-sizing: border-box;
+
+      width: 256px;
+      height: 330px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 400px;
+    }
+
+    &--house,
+    &--gift,
+    &--burger {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+
+    &--house {
+      order: 0;
+
+      &::before {
+        top: 19px;
+        left: -48px;
+
+        width: 38px;
+        height: 37px;
+
+        background-image:url(../img/sprite.styles.svg#house);
+
+        @media (min-width: $tablet) {
+          top: 60px;
+          left: 90px;
+
+          width: 75px;
+          height: 72px;
+        }
+
+        @media (min-width: $desktop) {
+          left: 161px;
+        }
+      }
+    }
+
+    &--gift {
+      order: 1;
+
+      &::before {
+        top: 17px;
+        left: -45px;
+
+        width: 32px;
+        height: 38px;
+
+        background-image:url(../img/sprite.styles.svg#gift);
+        background-size: 100% 101%;
+
+        @media (min-width: $tablet) {
+          top: 57px;
+          left: 95px;
+
+          width: 64px;
+          height: 75px;
+        }
+
+        @media (min-width: $desktop) {
+          left: 167px;
+        }
+      }
+    }
+
+    &--burger {
+      order: 0;
+
+      &::before {
+        top: 23px;
+        left: -51px;
+
+        width: 39px;
+        height: 35px;
+
+        background-image: url(../img/sprite.styles.svg#burger);
+        background-size: 100% 101%;
+
+        @media (min-width: $tablet) {
+          top: 62px;
+          left: 90px;
+
+          width: 77px;
+          height: 69px;
+        }
+
+        @media (min-width: $desktop) {
+          left: 162px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    padding-bottom: 14px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 21px;
+    }
+  }
+}

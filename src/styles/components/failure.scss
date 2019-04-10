@@ -1,0 +1,45 @@
+.failure {
+  display: none;
+  padding: 40px 45px 35px;
+
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet) {
+    width: 400px;
+    margin: 0 auto;
+    padding: 56px 60px 49px;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    padding-bottom: 27px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 23px;
+    }
+    @media (min-width: $desktop) {
+      font-size: $biggest-size;
+      line-height: $bigger-height;
+    }
+  }
+
+  &__message {
+     padding-bottom: 22px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 33px;
+    }
+  }
+
+  &__btn {
+    width: 180px;
+
+    font-size: $big-size;
+
+    @media (min-width: $tablet) {
+      width: 272px;
+
+      font-size: $bigger-size;
+    }
+  }
+}

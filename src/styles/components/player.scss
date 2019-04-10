@@ -1,0 +1,15 @@
+.player {
+  @media (min-width: $tablet) {
+    position: relative;
+    top: 16px;
+  }
+
+  &__screen {
+    position: relative;
+    z-index: -1;
+  }
+
+  &__controls {
+    margin: 0 auto;
+  }
+}

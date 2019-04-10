@@ -1,0 +1,64 @@
+.form {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__group {
+    position: relative;
+
+    border: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -19px;
+      left: -20px;
+
+      width: 320px;
+      height: 1px;
+
+      background-color: $primary-darker10;
+
+      @media (min-width: $tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &__required {
+    position: relative;
+    top: -2px;
+    left: 0;
+
+    &--space {
+      left: -4px;
+    }
+  }
+
+  &__btn {
+    order: 1;
+    width: 280px;
+
+    @media (min-width: $tablet) {
+      padding-left: 10px;
+      width: 324px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-left: 20px;
+      width: 480px;
+    }
+  }
+
+  &__footnote {
+    display: none;
+
+    @media (min-width: $tablet) {
+      order: 1;
+      display: block;
+      margin-left: auto;
+      padding-top: 19px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.success {
+  display: none;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    width: 640px;
+  }
+
+  &__wrapper {
+    padding: 42px 45px 12px;
+
+    @media (min-width: $tablet) {
+      padding: 56px 95px 12px;
+    }
+  }
+
+  &__title {
+    padding-bottom: 27px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 23px;
+    }
+    @media (min-width: $desktop) {
+      font-size: $biggest-size;
+      line-height: $bigger-height;
+    }
+  }
+
+  &__message {
+    padding-bottom: 22px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 21px;
+    }
+  }
+
+  &__btn {
+    width: 320px;
+    border: 20px solid $primary-darker5;
+
+    font-size: $big-size;
+
+    @media (min-width: $tablet) {
+      width: 640px;
+      border-width: 44px 92px 44px 92px;
+
+      font-size: $bigger-size;
+    }
+  }
+}
