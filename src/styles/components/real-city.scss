@@ -46,7 +46,7 @@
         width: 38px;
         height: 37px;
 
-        background-image:url(../img/sprite.styles.svg#house);
+        background-image:url(../img/house.svg);
 
         @media (min-width: $tablet) {
           top: 60px;
@@ -72,7 +72,7 @@
         width: 32px;
         height: 38px;
 
-        background-image:url(../img/sprite.styles.svg#gift);
+        background-image:url(../img/gift.svg);
         background-size: 100% 101%;
 
         @media (min-width: $tablet) {
@@ -99,7 +99,7 @@
         width: 39px;
         height: 35px;
 
-        background-image: url(../img/sprite.styles.svg#burger);
+        background-image: url(../img/burger.svg);
         background-size: 100% 101%;
 
         @media (min-width: $tablet) {

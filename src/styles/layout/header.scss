@@ -3,6 +3,10 @@
     position: relative;
   }
   
+  &__wrapper {
+    overflow: hidden;
+  }
+  
   &__logo {
     position: absolute;
     content: "";
@@ -11,15 +15,15 @@
     width: 101px;
     height: 84px;
 
-    background-image: url(../img/sprite.styles.svg#logo-mobile);
-    background-repeat: no-repeat;
+    background-image: url(../img/logo-mobile.svg);
     background-size: 100% 100%;
+    background-repeat: no-repeat;
 
     @media (min-width: $tablet) {
       top: 0;
       left: 333px;
 
-      background-image: url(../img/sprite.styles.svg#logo-tablet);
+      background-image: url(../img/logo-tablet.svg);
     }
 
     @media (min-width: $desktop) {
@@ -28,11 +32,12 @@
       width: 186px;
       height: 96px;
 
-      background-image: url(../img/sprite.styles.svg#logo-desktop);
+      background-image: url(../img/logo-desktop.svg);
     }
   }
 
   &__toggle {
+    overflow: hidden;
     position: relative;
     
     display: block;
@@ -100,7 +105,7 @@
       width: 320px;
       height: 26px;
 
-      background-image: url(../img/sprite.styles.svg#angles-mobile);
+      background-image: url(../img/angles-mobile.svg);
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
@@ -119,7 +124,7 @@
         width: 768px;
         height: 57px;
 
-        background-image: url(../img/sprite.styles.svg#angles-tablet);
+        background-image: url(../img/angles-tablet.svg);
       }
     }
     @media (min-width: $desktop) {
@@ -133,7 +138,7 @@
       &::after {
         width: 1200px;
 
-        background-image: url(../img/sprite.styles.svg#angles-desktop); 
+        background-image: url(../img/angles-desktop.svg); 
       }
     }
 

@@ -108,11 +108,11 @@
       width: 16px;
       height: 20px;
 
-      background-image: url(../img/sprite.styles.svg#replay-mobile);
+      background-image: url(../img/replay-mobile.svg);
       
 
       &:hover {
-        background-image: url(../img/sprite.styles.svg#replay-mobile-hover);
+        background-image: url(../img/replay-mobile-hover.svg);
 
         &:active {
           opacity: 0.3;
@@ -123,7 +123,7 @@
         top: -9px;
         left: -251px;
 
-        background-image: url(../img/sprite.styles.svg#replay);
+        background-image: url(../img/replay.svg);
 
         &:hover,
         &:focus {
@@ -149,10 +149,10 @@
       width: 32px;
       height: 20px;
 
-      background-image: url(../img/sprite.styles.svg#subtitles-mobile);
+      background-image: url(../img/subtitles-mobile.svg);
 
       &:hover {
-        background-image: url(../img/sprite.styles.svg#subtitles-mobile-hover);
+        background-image: url(../img/subtitles-mobile-hover.svg);
 
         &:active {
           opacity: 0.3;
@@ -163,7 +163,7 @@
         top: -8px;
         left: 218px;
 
-        background-image: url(../img/sprite.styles.svg#subtitles);
+        background-image: url(../img/subtitles.svg);
 
         &:hover,
         &:focus {
@@ -189,10 +189,10 @@
       width: 20px;
       height: 20px;
 
-      background-image: url(../img/sprite.styles.svg#fullscreen-mobile);
+      background-image: url(../img/fullscreen-mobile.svg);
 
       &:hover {
-        background-image: url(../img/sprite.styles.svg#fullscreen-mobile-hover);
+        background-image: url(../img/fullscreen-mobile-hover.svg);
 
         &:active {
           opacity: 0.3;
@@ -203,7 +203,7 @@
         top: -8px;
         left: 246px;
 
-        background-image: url(../img/sprite.styles.svg#fullscreen);
+        background-image: url(../img/fullscreen.svg);
 
         &:hover,
         &:focus {

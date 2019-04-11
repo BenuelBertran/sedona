@@ -122,7 +122,7 @@
       width: 24px;
       height: 20px;
 
-      background-image: url(../img/sprite.styles.svg#like-mobile);
+      background-image: url(../img/like-mobile.svg);
       background-repeat: no-repeat;
       background-size: 100% 100%;
 
@@ -134,7 +134,7 @@
       }
 
       @media (min-width: $desktop) {
-        background-image: url(../img/sprite.styles.svg#like-desktop);
+        background-image: url(../img/like-desktop.svg);
         background-size: 24px 21px;
       }
     }

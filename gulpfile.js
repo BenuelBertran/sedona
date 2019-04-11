@@ -92,12 +92,7 @@ gulp.task('sprite:svg', function () {
   .pipe(svgSprite({
     mode: {
       symbol: {
-        sprite: 'sprite.inline.svg',
-        dest:'.'
-      },
-      view: {
-        bust: false,
-        sprite: 'sprite.styles.svg',
+        sprite: 'sprite.svg',
         dest:'.'
       }
     }
