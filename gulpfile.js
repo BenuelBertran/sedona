@@ -46,7 +46,7 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function () {
   return gulp.src('src/scripts/**/*.js')
-    .pipe(concat ('all.js'))
+//    .pipe(concat ('all.js'))
     .pipe(terser())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest ('build/js'))
@@ -157,6 +157,12 @@ gulp.task('clean:images', function () {
     .pipe(clean());
 });
 
+//Очистка билда: скрипты
+gulp.task('clean:scripts', function () {
+  return gulp.src('build/js', {read: false})
+    .pipe(clean());
+});
+
 //Сборка билда: всё
 gulp.task('build', gulp.series (
   'clean',
@@ -172,6 +178,9 @@ gulp.task('build:styles', gulp.series ('clean:styles', 'styles'));
 
 //Сборка билда: изображения
 gulp.task('build:images', gulp.series ('clean:images', 'images', 'webp', 'sprite:svg'));
+
+//Сборка билда: скрипты
+gulp.task('build:scripts', gulp.series ('clean:scripts', 'scripts'));
 
 //Разработка: 'gulp start'
 gulp.task('default', gulp.series (
