@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <title>Sedona</title>
+</head>
+
+<body class="page">
+  <header class="header page__header">
+    <nav class="header__nav">
+      <div class="header__wrapper">
+        <ul class="menu header__list">
+          <li class="menu__item">
+            <a class="btn menu__link menu__link--index" href="index.html">Главная</a></li>
+          <li class="menu__item">
+            <a class="btn menu__link menu__link--media" href="media.html">Фото и видео</a></li>
+          <li class="menu__item">
+            <a class="btn menu__link menu__link--form" href="feedback.html">Форма отзыва</a></li>
+          <li class="menu__item">
+            <a class="btn menu__link menu__link--contacts" href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="header__logo"></div>
+      <button class="header__toggle" type="button" aria- label="ПоказатьСкрыть главное меню"></button>
+    </nav>
+    <h1 class="title header__title">
+      <picture class="header__picture">
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-bg-desktop@1x.webp, img/header-bg-desktop@2x.webp 2x">
+        <source media="(min-width: 1200px)" srcset="img/header-bg-desktop@1x.jpg, img/header-bg-desktop@2x.jpg 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/header-bg-tablet@1x.webp, img/header-bg-tablet@2x.webp 2x">
+        <source media="(min-width: 768px)" srcset="img/header-bg-tablet@1x.jpg, img/header-bg-tablet@2x.jpg 2x">
+        <source type="image/webp" srcset="img/header-bg-mobile@1x.webp, img/header-bg-mobile@2x.webp 2x">
+        <img class="header__image" src="img/header-bg-mobile@1x.jpg" srcset="img/header-bg-mobile@2x.jpg 2x" alt="SEDONA"></picture>
+    </h1>
+  </header>
+  <main class="feedback page__main">
+    <section class="response feedback__section">
+      <h2 class="title response__title">Оставьте свой отзыв</h2>
+      <p class="response__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них,&nbsp;<br class="break break--tablet break--desktop">а также о посещённых вами достопримечательностях</p>
+      <form class="form response__form" action="#" method="post">
+        <fieldset class="introduce form__group">
+          <legend class="title introduce__title">Представьтесь:</legend>
+          <ul class="introduce__list">
+            <li class="introduce__item">
+              <label class="introduce__label" for="first-name-field">Имя<sup class="introduce__required">*:</sup></label>
+              <input class="introduce__field" type="text" name="first-name" placeholder="Пётр" id="first-name-field" required></li>
+            <li class="introduce__item">
+              <label class="introduce__label" for="second-name-field">Фамилия<sup class="introduce__required">*:</sup></label>
+              <input class="introduce__field" type="text" name="second-name" placeholder="Иванов" id="second-name-field" required></li>
+            <li class="introduce__item">
+              <label class="introduce__label" for="third-name-field">Отчество:</label>
+              <input class="introduce__field" type="text" name="third-name" placeholder="Александрович" id="third-name-field"></li>
+          </ul>
+        </fieldset>
+        <fieldset class="contacts form__group">
+          <legend class="title contacts__title">Контактная информация:</legend>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <label class="contacts__label contacts__label--phone" for="phone-field"><span class="contacts__span">Контактный&nbsp;</span>телефон<sup class="contacts__required">*:</sup></label>
+              <input class="contacts__field" type="tel" name="phone" placeholder="Введите телефон" id="phone-field" required></li>
+            <li class="contacts__item">
+              <label class="contacts__label contacts__label--email" for="email-field">Электронная почта<sup class="contacts__required">*:</sup></label>
+              <input class="contacts__field" type="email" name="email" placeholder="Введите e-mail" id="email-field" required></li>
+          </ul>
+        </fieldset>
+        <fieldset class="impression form__group">
+          <legend class="title impression__title">Ваше общее впечатление:</legend>
+          <ul class="impression__list">
+            <li class="impression__item">
+              <input class="impression__field screen-readers-only" type="radio" name="impression" value="Скорее положительное" id="positive-field" checked>
+              <label class="impression__label" for="positive-field">Скорее положительное</label></li>
+            <li class="impression__item form__item">
+              <input class="impression__field screen-readers-only" type="radio" name="impression" value="Скорее отрицательное" id="negative-field">
+              <label class="impression__label" for="negative-field">Скорее отрицательное</label></li>
+            <li class="impression__item form__item">
+              <input class="impression__field screen-readers-only" type="radio" name="impression" value="Затрудняюсь ответить" id="neutral-field">
+              <label class="impression__label" for="neutral-field">Затрудняюсь ответить</label></li>
+          </ul>
+        </fieldset>
+        <fieldset class="sights form__group">
+          <legend class="title sights__title">Посещенные&nbsp;<br class="break break--mobile break--tablet break--desktop">достопримечательности:</legend>
+          <ul class="sights__list">
+            <li class="sights__item">
+              <input class="sights__field screen-readers-only" type="checkbox" name="devil-bridge" value="Мост Дьявола" id="devil-bridge-field" checked>
+              <label class="sights__label" for="devil-bridge-field">Мост Дьявола</label></li>
+            <li class="sights__item sights__item--bell">
+              <input class="sights__field screen-readers-only" type="checkbox" name="bell-mountain" value="Гора-Колокол" id="bell-mountain-field" checked>
+              <label class="sights__label" for="bell-mountain-field">Гора-Колокол</label></li>
+            <li class="sights__item sights__item--park">
+              <input class="sights__field screen-readers-only" type="checkbox" name="slide-park" value="Слайд-парк" id="slide-park-field" checked>
+              <label class="sights__label" for="slide-park-field">Слайд-парк</label></li>
+            <li class="sights__item">
+              <input class="sights__field screen-readers-only" type="checkbox" name="red-rocks" value="Красные скалы" id="red-rocks-field">
+              <label class="sights__label" for="red-rocks-field">Красные скалы</label></li>
+          </ul>
+        </fieldset>
+        <fieldset class="emotions form__group">
+          <legend class="title emotions__title">Опишите свои эмоции:</legend>
+          <ul class="emotions__list">
+            <li class="emotions__item">
+              <textarea class="emotions__field" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea></li>
+          </ul>
+        </fieldset>
+        <button class="btn form__btn" type="submit">Отправить отзыв</button>
+        <p class="form__footnote"><sup class="form__required form__required--space">*</sup>&ndash; обязательные поля</p>
+      </form>
+      <div class="modal failure response__modal">
+        <h2 class="title failure__title"> Что-то пошло&nbsp;<br class="break break--tablet">не так!</h2>
+        <p class="failure__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="btn failure__btn" type="button">Ок</button>
+      </div>
+      <div class="modal success response__modal" hidden>
+        <div class="success__wrapper">
+          <h2 class="title modal__title success__title">Ваш отзыв отправлен!</h2>
+          <p class="success__message"> Спасибо за ваше участие, ваш отзыв уже поступил к нам.&nbsp;<br class="break break--mobile break--tablet">В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <button class="btn success__btn" type="button">Ок</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer page__footer">
+    <p class="title footer__tag">#Visitsedona</p>
+    <ul class="social footer__list">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="18" height="14">
+            <use xlink:href="img/sprite.svg#twitter"></use>
+          </svg></a></li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="9" height="19">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg></a></li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="20" height="15">
+            <use xlink:href="img/sprite.svg#youtube"></use>
+          </svg></a></li>
+    </ul><b class="footer__copyright">&copy; Benuel Bertran</b>
+  </footer>
+  <script src="js/mobileMenu.min.js" async></script>
+  <script src="js/modal.min.js" async></script>
+</body>
+
+</html>

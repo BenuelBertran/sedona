@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <title>Sedona</title>
+</head>
+
+<body class="page">
+  <header class="header page__header">
+    <nav class="header__nav">
+      <div class="header__wrapper">
+        <ul class="menu header__list">
+          <li class="menu__item">
+            <a class="btn menu__link menu__link--index" href="index.html">Главная</a></li>
+          <li class="menu__item">
+            <a class="btn menu__link menu__link--media" href="media.html">Фото и видео</a></li>
+          <li class="menu__item">
+            <a class="btn menu__link menu__link--form" href="feedback.html">Форма отзыва</a></li>
+          <li class="menu__item">
+            <a class="btn menu__link menu__link--contacts" href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="header__logo"></div>
+      <button class="header__toggle" type="button" aria- label="ПоказатьСкрыть главное меню"></button>
+    </nav>
+    <h1 class="title header__title">
+      <picture class="header__picture">
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-bg-desktop@1x.webp, img/header-bg-desktop@2x.webp 2x">
+        <source media="(min-width: 1200px)" srcset="img/header-bg-desktop@1x.jpg, img/header-bg-desktop@2x.jpg 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/header-bg-tablet@1x.webp, img/header-bg-tablet@2x.webp 2x">
+        <source media="(min-width: 768px)" srcset="img/header-bg-tablet@1x.jpg, img/header-bg-tablet@2x.jpg 2x">
+        <source type="image/webp" srcset="img/header-bg-mobile@1x.webp, img/header-bg-mobile@2x.webp 2x">
+        <img class="header__image" src="img/header-bg-mobile@1x.jpg" srcset="img/header-bg-mobile@2x.jpg 2x" alt="SEDONA"></picture>
+    </h1>
+  </header>
+  <main class="media">
+    <section class="gallery media__section">
+      <h2 class="title gallery__title">Фотогалерея</h2>
+      <p class="gallery__subtitle">Не можете решиться на путешествие из за курса?&nbsp;<br class="break break--tablet break--desktop">Фотографии помогут&nbsp;<br class="break break--mobile">вам забыть о политике и экономике.</p>
+      <ul class="photos gallery__list">
+        <li class="photos__item">
+          <figure class="photos__card">
+            <a class="photos__link" href="#">
+              <picture class="photos__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/sunset-desktop@1x.webp, img/sunset-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/sunset-desktop@1x.jpg, img/sunset-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/sunset-tablet@1x.webp, img/sunset-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/sunset-tablet@1x.jpg, img/sunset-tablet@1x.jpg 2x">
+                <source type="image/webp" srcset="img/sunset-mobile@1x.webp, img/sunset-mobile@2x.webp 2x">
+                <img class="photos__image" src="img/sunset-mobile@1x.jpg" srcset="img/sunset-mobile@2x.jpg 2x" alt="Дорога, уходящая в закат"></picture>
+            </a>
+            <figcaption class="photos__caption photos__caption--big">
+              <div class="photos__wrapper">
+                <h3 class="title photos__title">Неродные просторы</h3>
+                <p class="photos__author">Автор фото: Борис</p>
+              </div>
+              <div class="photos__wrapper"><input class="photos__input screen-readers-only" type="checkbox" name="like-sunset" value="sunset" id="sunset-field"><label class="photos__label" for="sunset-field">1350</label></div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="photos__item">
+          <figure class="photos__card">
+            <a class="photos__link" href="#">
+              <picture class="photos__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/cactus-desktop@1x.webp, img/cactus-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/cactus-desktop@1x.jpg, img/cactus-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cactus-tablet@1x.webp, img/cactus-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/cactus-tablet@1x.jpg, img/cactus-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/cactus-mobile@1x.webp, img/cactus-mobile@2x.webp 2x">
+                <img class="photos__image" src="img/cactus-mobile@1x.jpg" srcset="img/cactus-mobile@2x.jpg 2x" alt="Экзотический кактус на фоне гор"></picture>
+            </a>
+            <figcaption class="photos__caption">
+              <div class="photos__wrapper">
+                <h3 class="title photos__title">Местная растительность</h3>
+                <p class="photos__author">Автор фото: Сергей</p>
+              </div>
+              <div class="photos__wrapper"><input class="photos__input screen-readers-only" type="checkbox" name="like-cactus" value="cactus" id="cactus-field"><label class="photos__label" for="cactus-field">143</label></div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="photos__item">
+          <figure class="photos__card">
+            <a class="photos__link" href="#">
+              <picture class="photos__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/serpentine-desktop@1x.webp, img/serpentine-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/serpentine-desktop@1x.jpg, img/serpentine-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/serpentine-tablet@1x.webp, img/serpentine-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/serpentine-tablet@1x.jpg, img/serpentine-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/serpentine-mobile@1x.webp, img/serpentine-mobile@2x.webp 2x">
+                <img class="photos__image" src="img/serpentine-mobile@1x.jpg" srcset="img/serpentine-mobile@2x.jpg 2x" alt="Дорожный серпантин в густом лесу"></picture>
+            </a>
+            <figcaption class="photos__caption">
+              <div class="photos__wrapper">
+                <h3 class="title photos__title">Дорога на Север</h3>
+                <p class="photos__author">Автор фото: Пётр</p>
+              </div>
+              <div class="photos__wrapper"><input class="photos__input screen-readers-only" type="checkbox" name="like-serpentine" value="serpentine" id="serpentine-field"><label class="photos__label" for="serpentine-field">96</label></div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="photos__item">
+          <figure class="photos__card">
+            <a class="photos__link" href="#">
+              <picture class="photos__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/bridge-gallery-desktop@1x.webp, img/bridge-gallery-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/bridge-gallery-desktop@1x.jpg, img/bridge-gallery-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/bridge-gallery-tablet@1x.webp, img/bridge-gallery-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/bridge-gallery-tablet@1x.jpg, img/bridge-gallery-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/bridge-gallery-mobile@1x.webp, img/bridge-gallery-mobile@2x.webp 2x"><img class="photos__image" src="img/bridge-gallery-mobile@1x.jpg" srcset="img/bridge-gallery-mobile@2x.jpg 2x" alt="Каменный мост над пропастью"></picture>
+            </a>
+            <figcaption class="photos__caption">
+              <div class="photos__wrapper">
+                <h3 class="title photos__title">Мост Дьявола</h3>
+                <p class="photos__author">Автор фото: Антон</p>
+              </div>
+              <div class="photos__wrapper"><input class="photos__input screen-readers-only" type="checkbox" name="like-bridge" value="bridge" id="bridge-field"><label class="photos__label" for="bridge-field">254</label></div>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+    <section class="video media__section">
+      <h2 class="title video__title">Все еще сомневаетесь?</h2>
+      <p class="video__subtitle">Смотрите видеопрезентацию и&nbsp;<br class="break break--mobile">скорее за билетами, пока&nbsp;<br class="break break--tablet break--desktop">они не подорожали в очередной раз!</p>
+      <div class="player video__player">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/cars-desktop@1x.webp, img/cars-desktop@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/cars-desktop@1x.jpg, img/cars-desktop@2x.jpg 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/cars-tablet@1x.webp, img/cars-tablet@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/cars-mobile@1x.jpg, img/cars-mobile@2x.jpg 2x">
+          <source type="image/webp" srcset="img/cars-mobile@1x.webp, img/cars-mobile@2x.webp 2x">
+          <img class="player__screen" src="img/cars-mobile@1x.jpg" srcset="img/cars-mobile@2x.jpg 2x" alt="Ряд машин на загородной трассе"></picture>
+        <div class="controls player__controls">
+          <div class="controls__playback"></div>
+          <button class="controls__btn controls__btn--replay" type="button" aria-label="replay"></button>
+          <button class="controls__btn controls__btn--subtitles" type="button" aria-label="subtitles"></button>
+          <button class="controls__btn controls__btn--fulscreen" type="button" aria-label="fulscreen"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer page__footer">
+    <p class="title footer__tag">#Visitsedona</p>
+    <ul class="social footer__list">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="18" height="14">
+            <use xlink:href="img/sprite.svg#twitter"></use>
+          </svg></a></li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="9" height="19">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg></a></li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <svg class="social__icon" width="20" height="15">
+            <use xlink:href="img/sprite.svg#youtube"></use>
+          </svg></a></li>
+    </ul><b class="footer__copyright">&copy; Benuel Bertran</b>
+  </footer>
+  <script src="js/mobileMenu.min.js" async></script>
+  <script src="js/likes.min.js" async></script>
+</body>
+
+</html>
