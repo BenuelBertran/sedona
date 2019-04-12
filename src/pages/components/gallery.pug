@@ -23,7 +23,9 @@ section(class="gallery media__section")
           div(class="photos__wrapper")
             h3(class="title photos__title") Неродные просторы
             p(class="photos__author") Автор фото: Борис
-          p(class="photos__likes") 1350
+          div(class="photos__wrapper")
+            input(class="photos__input screen-readers-only" type="checkbox" name="like-sunset" value="sunset" id="sunset-field")
+            label(class="photos__label" for="sunset-field") 1350
     li(class="photos__item")
       figure(class="photos__card")
         = '\n'
@@ -40,7 +42,9 @@ section(class="gallery media__section")
           div(class="photos__wrapper")
             h3(class="title photos__title") Местная растительность
             p(class="photos__author") Автор фото: Сергей
-          p(class="photos__likes") 143
+          div(class="photos__wrapper")
+            input(class="photos__input screen-readers-only" type="checkbox" name="like-cactus" value="cactus" id="cactus-field")
+            label(class="photos__label" for="cactus-field") 143
     li(class="photos__item")
       figure(class="photos__card")
         = '\n'
@@ -57,7 +61,9 @@ section(class="gallery media__section")
           div(class="photos__wrapper")
             h3(class="title photos__title") Дорога на Север
             p(class="photos__author") Автор фото: Пётр
-          p(class="photos__likes") 96
+          div(class="photos__wrapper")
+            input(class="photos__input screen-readers-only" type="checkbox" name="like-serpentine" value="serpentine" id="serpentine-field")
+            label(class="photos__label" for="serpentine-field") 96
     li(class="photos__item")
       figure(class="photos__card")
         = '\n'
@@ -73,4 +79,6 @@ section(class="gallery media__section")
           div(class="photos__wrapper")
             h3(class="title photos__title") Мост Дьявола
             p(class="photos__author") Автор фото: Антон
-          p(class="photos__likes") 254
+          div(class="photos__wrapper")
+            input(class="photos__input screen-readers-only" type="checkbox" name="like-bridge" value="bridge" id="bridge-field")
+            label(class="photos__label" for="bridge-field") 254
